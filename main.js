@@ -15,7 +15,7 @@ if (!n || n < 0) {
   throw new Error(msg);
 } else {
   console.log(`N: ${n}`);
-  let cubeN = [];
+  const cubeN = [];
   for (let i = 1; i <= n; i++) {
     cubeN.push(i ** 3);
   }
@@ -23,13 +23,13 @@ if (!n || n < 0) {
   alert(`N: ${n} -> ${cubeN}`);
 }
 
-/* //* Stampa le potenze di 2 fino a 1000.
+//* Stampa le potenze di 2 fino a 1000.
 
 console.log(`- Stampa le potenze di 2 fino a 1000.`);
 
-let pot2 = [];
-for (let i = 1; i <= Math.sqrt(1000); i++) {
-  pot2.push(i ** 2);
+const pot2 = [];
+for (let p = 1; p <= 1000; p *= 2) {
+  pot2.push(p);
 }
 console.table(pot2);
-alert(`potenze di 2 fino a 1000 -> ${pot2}`); */
+alert(`Potenze di 2 fino a 1000 -> ${pot2}`);

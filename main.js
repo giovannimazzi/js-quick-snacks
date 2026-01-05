@@ -1,7 +1,8 @@
 //* Stampa il cubo dei primi N numeri, dove N è un numero indicato dall’utente.
 
 console.log(
-  `- Stampa il cubo dei primi N numeri, dove N è un numero indicato dall’utente.`
+  `%c- Stampa il cubo dei primi N numeri, dove N è un numero indicato dall’utente.`,
+  "color: yellowgreen"
 );
 const n = parseInt(
   prompt(
@@ -24,7 +25,7 @@ if (!n || n < 0) {
 
 //* Stampa le potenze di 2 fino a 1000.
 
-console.log(`- Stampa le potenze di 2 fino a 1000.`);
+console.log(`%c- Stampa le potenze di 2 fino a 1000.`, "color: yellowgreen");
 
 const pot2 = [];
 for (let p = 1; p <= 1000; p *= 2) {
@@ -36,7 +37,8 @@ alert(`Potenze di 2 fino a 1000 -> ${pot2}`);
 //* Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte le cifre che compongono il numero.
 
 console.log(
-  `- Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte le cifre che compongono il numero.`
+  `%c- Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte le cifre che compongono il numero.`,
+  "color: yellowgreen"
 );
 const num = parseInt(
   prompt(
@@ -60,7 +62,10 @@ if (!num || num < 1000 || num > 9999) {
 
 //* Calcola la somma e la media dei primi 10 numeri.
 
-console.log(`- Calcola la somma e la media dei primi 10 numeri.`);
+console.log(
+  `%c- Calcola la somma e la media dei primi 10 numeri.`,
+  "color: yellowgreen"
+);
 
 let sum = 0;
 for (let i = 0; i < 10; i++) {

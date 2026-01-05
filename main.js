@@ -57,3 +57,17 @@ if (!num || num < 1000 || num > 9999) {
   console.log(`Somma: ${num} -> ${somma}`);
   alert(`Somma: ${num} -> ${somma}`);
 }
+
+//* Calcola la somma e la media dei primi 10 numeri.
+
+console.log(`- Calcola la somma e la media dei primi 10 numeri.`);
+
+let sum = 0;
+for (let i = 0; i < 10; i++) {
+  sum += i;
+}
+const media = sum / 10;
+console.log(
+  `Somma e Media dei primi 10 numeri (0-9) -> S: ${sum}, M: ${media}`
+);
+alert(`Somma e Media dei primi 10 numeri (0-9) -> S: ${sum}, M: ${media}`);

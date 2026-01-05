@@ -47,7 +47,8 @@ const numStr = prompt(
 const num = parseInt(numStr);
 
 if (isNaN(num) || num < 0 || numStr.length !== 4) {
-  const msg = `Numero inserito (${num}) non valido! Esecuzione interrotta.`;
+  const msg =
+    `Numero inserito ` + numStr + ` non valido! Esecuzione interrotta.`;
   alert(msg);
   throw new Error(msg);
 } else {
